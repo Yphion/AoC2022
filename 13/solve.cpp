@@ -25,8 +25,6 @@ struct Weird {
 // returns 0 if one == other , 1 if one < other and 2 if one > other
 int good(Weird &one, Weird &other){
 
-    cout << one.B.size() << " " << other.B.size() << endl;
-
     if(one.opt == 0 && other.opt == 0){
         if(one.A < other.A){
             return 1;
