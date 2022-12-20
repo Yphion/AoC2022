@@ -6,9 +6,6 @@
 #include <algorithm>
 #include <set>
 #include <map>
-#include <CGAL/Gmpz.h>
-
-typedef CGAL::Gmpz Z;
 
 using namespace std;
 
