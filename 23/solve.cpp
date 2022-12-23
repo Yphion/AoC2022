@@ -40,9 +40,6 @@ int main(){
     int row = 0;
     while(std::getline(f,line)){
 
-        // int a, b, c, d;
-        // sscanf(line.c_str(),"%i-%i,%i-%i",&a,&b,&c,&d);
-
         std::istringstream ss(line);
         for(int i=0; i<line.size(); ++i){
             if(line[i] == '#'){
@@ -76,8 +73,6 @@ int main(){
         }
         rounds++;
         moves = 0;
-
-        //std::cout << E.size() << " " << E[0].id << " " << E[0].x << " " << E[0].y << endl;
 
         for(Elf &e : E){
             if(pmap.count(P(e.x+1,e.y)) == 0 && pmap.count(P(e.x+1,e.y+1)) == 0 && pmap.count(P(e.x,e.y+1)) == 0 && pmap.count(P(e.x-1,e.y+1)) == 0 && pmap.count(P(e.x-1,e.y)) == 0 && pmap.count(P(e.x-1,e.y-1)) == 0 && pmap.count(P(e.x,e.y-1)) == 0 && pmap.count(P(e.x+1,e.y-1)) == 0){
